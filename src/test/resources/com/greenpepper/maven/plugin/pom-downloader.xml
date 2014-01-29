@@ -1,0 +1,55 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <name>test greenpepper runner</name>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>greenpepper-maven-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <specsDirectory>target/specs</specsDirectory>
+
+                    <!--<repositories>-->
+                        <!--<repository>-->
+                            <!--<type>com.greenpepper.repository.FileSystemRepository</type>-->
+                            <!-- <root>file://./src/fixture/resources</root> -->
+                            <!-- <name>file</name> -->
+                            <!--<tests>-->
+                                <!--<test>dir/file</test>-->
+                            <!--</tests>-->
+                        <!--</repository>-->
+                        <!--<repository>-->
+                            <!--<type>com.greenpepper.runner.repository.AtlassianRepository</type>-->
+                            <!--<root>http://domain:port/rpc/xmlrpc?handler=handler&includeStyle=true#SPACE KEY</root>-->
+                            <!-- <name>confluence</name> -->
+                            <!--<tests>-->
+                                <!--<test>PAGE TITLE</test>-->
+                            <!--</tests>-->
+                        <!--</repository>-->
+                        <!--<repository>-->
+                            <!--<type>com.greenpepper.runner.repository.GreenPepperRepository</type>-->
+                            <!--<root>http://taurus:8080/greenpepperserver/rpc/xmlrpc?handler=greenpepper1&sut=SUT&includeStyle=true</root>-->
+                            <!-- <name>greenpepper</name> -->
+                            <!--<suites>-->
+                                <!--<suite>-->
+                                    <!-- REPO_UID -->
+                                    <!-- REPO_UID2 -->
+                                <!--</suite>-->
+                            <!--</suites>-->
+                        <!--</repository>-->
+                    <!--</repositories>-->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>greenpepper-open</groupId>
+            <artifactId>greenpepper-core</artifactId>
+            <version>2.4</version>
+        </dependency>
+    </dependencies>
+</project>
