@@ -69,9 +69,8 @@
     </dependencies>
 
     <scm>
-        <connection>scm:svn:https://www.pyxis-tech.ca/svn/GreenPepperRepos/maven-plugin</connection>
-        <developerConnection>scm:svn:https://www.pyxis-tech.ca/svn/GreenPepperRepos/maven-plugin/trunk</developerConnection>
-        <url>https://www.pyxis-tech.ca/fisheye/viewrep/GreenPepper/maven-plugin</url>
+        <connection>https://github.com/greenpeppersoftware/maven-plugin.git</connection>
+        <url>https://github.com/greenpeppersoftware/maven-plugin</url>
     </scm>
 
     <build>
